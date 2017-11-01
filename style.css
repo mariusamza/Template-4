@@ -1,0 +1,205 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+
+	margin-top:80px;
+
+}
+
+
+
+.exterior {
+}
+
+.interior {
+	width:1170px;
+	margin:0 auto;
+}
+
+.empty_space {
+	min-height: 60px;
+}
+
+
+
+
+
+
+.header {
+	
+	/* border-bottom:1px solid #ccc; */
+	box-shadow: 0 3px 3px -3px #999;
+
+	position: fixed;
+	top: 0px;
+
+	background-color: #fff;
+	width:100%;
+
+	height:82px;
+}
+
+.header .meniu {
+	display: block;
+	width: 800px;
+	float:right;
+
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header .meniu li {
+	display:inline-block;
+}
+
+.header .meniu li a {
+	text-decoration: none;
+	color:#666;
+	font-size: 14px;
+	display: block;
+
+	padding:34px 20px 32px 20px;
+
+	position:relative;
+	overflow: hidden;
+
+	border-bottom:2px solid transparent;
+	transition: all 0.2s ease-in-out;
+}
+
+.header .meniu li a:hover {
+	color: #ee0000;
+	border-bottom:2px solid #ee0000;
+	background-color:#f1f1f1;
+}
+
+.header .meniu li .active {
+	color: #ee0000;
+	border-bottom:2px solid #ee0000;
+	background-color:#f1f1f1;
+}
+
+.header .meniu li .active:after {
+	content: '';
+	display: block;
+	width: 5px;
+	height:5px;
+	background-color:#ee0000;
+
+	transform: rotate(45deg);
+
+	position: absolute;
+	bottom:-2px;
+	left:50%;
+	margin-left:-2px;
+}
+
+.slider {
+	min-height: 400px;
+	background-color: #ccc;
+	
+	background-image: url("grau.jpg");
+	background-size: cover;
+	background-position: center;
+
+	box-shadow: 0 3px 3px -3px #999;
+}
+
+.grid {
+	
+}
+
+.grid .interior {
+	display: flex;
+	justify-content: space-between;
+}
+
+.grid .box {
+	width:33%;
+	padding-right:50px;
+}
+
+.grid .box:last-child {
+	padding-right:0px;
+}
+
+.grid .box  h3 {
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 20px;
+
+	line-height: 40px;
+}
+
+.grid .box  p {
+	margin-bottom: 20px;
+}
+
+.grid .box a {
+	text-decoration: none;
+	color:#333;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.grid .box a:hover {
+	color:#ee0000;
+}
+
+.grid .box a .fa {
+	transition: all 0.2s ease-in-out;
+}
+
+.grid .box a:hover .fa {
+	margin-left: 5px;
+}
+
+
+.grid .box h3 span {
+	background-color: #333;
+	color:#fff;
+
+	display: block;
+	float: left;
+
+	width: 40px;
+	height: 40px;
+
+	margin-right:15px;
+
+	border-radius: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	transition: all 0.2s ease-in-out;
+}
+
+
+.grid .box:hover h3 span {
+	background-color:#ee0000;
+	transform: rotate(45deg);
+}
+
+
+.top {
+	font-weight: 600;
+	font-size: 20px;
+
+	border-bottom: 1px solid #ccc;
+	padding-bottom:15px;
+
+	position: relative;
+}
+
+.top:after {
+	content: '';
+	display: block;
+	width:50px;
+	height: 3px;
+	background-color: #ee0000;
+
+	position: absolute;
+	bottom: 0px;
+}
